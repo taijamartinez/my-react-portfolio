@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import NavLinks from "./NavLinks";
 
 export default function Header() {
   return (
-    <div>Header</div>
-  )
+    <header>
+      <NavLinks />
+    </header>
+  );
 }

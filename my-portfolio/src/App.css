@@ -1,9 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Ensure Navbar is Full-Width */
+.custom-navbar {
+  width: 100vw;  /* Ensure the navbar stretches across the screen */
+  margin: 0;
+  padding: 15px 30px; /* Adjust padding for better spacing */
+  min-height: 70px;
+  border-radius: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #212529;  /* Ensure background color covers the entire width */
+}
+
+/* Remove Default Margins/Padding from Body and HTML */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure Navbar Brand is Styled */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white !important;
+}
+
+/* Ensure Navbar Links are Styled Properly */
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Navbar Links - Hover Effect */
+.navbar-nav .nav-link:hover {
+  color: #cd8dda; /* Change this to any color you prefer */
+}
+
+/* Navbar Links - Active Page Effect */
+.navbar-nav .nav-link.active {
+  color: #cd8dda !important; /* Highlight active page */
+  font-weight: bold;
+}
+
+/* Prevent Navbar Overlapping Content */
+body {
+  padding-top: 80px; /* Push page content down so it's not hidden under navbar */
+}
+
+/* Override #root Styles for Full-Width Layout */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 100%;  /* Ensures full width */
+  margin: 0;
+  padding: 0;  /* Remove padding to prevent Navbar from shrinking */
   text-align: center;
 }
+
+
 
 .logo {
   height: 6em;
