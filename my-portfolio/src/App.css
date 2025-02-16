@@ -55,6 +55,10 @@ html, body {
 
 /* Prevent Navbar Overlapping Content */
 body {
+  background: linear-gradient(to right,#cd8dda, #ffffff);)
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
   padding-top: 80px; /* Push page content down so it's not hidden under navbar */
 }
 
@@ -143,3 +147,77 @@ main {
   flex: 1; /* Pushes footer down */
   padding: 20px; /* Adds space around the content */
 }
+
+/* About Me Section */
+.about-me {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* About Me Section */
+.about-me-card {
+  max-width: 800px; /* Keeps the content well-centered */
+  margin: 40px auto; /* Centers the card and adds spacing from top */
+  text-align: center;
+  border-radius: 12px; /* Smooth corners */
+  box-shadow: 10px 4px 12px rgba(0, 0, 0, 0.2); /* Adds soft shadow */
+  background: #ffffff; /* White background */
+  padding: 40px;
+}
+
+/* About Me Header */
+.about-me-card h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #212529;
+  margin-bottom: 20px;
+}
+/* Name & Title */
+.about-me-card .card-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+/* About Me Text */
+.about-me-card .card-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* View My Work Button */
+.about-me-card .btn-primary {
+  background-color: #cd8dda; /* Custom color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.about-me-card .btn-primary:hover {
+  background-color: #b077c5;
+}
+
+/* Footer Text */
+.card-footer {
+  font-size: 14px;
+  color: #fcfbfb;
+  background: #ebeaeb;
+  border-top: none;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes it a circle */
+  object-fit: cover;
+  border: 2px solid #cd8dda; /* Optional: Add a border color */
+  margin-bottom: 15px;
+}
+
