@@ -103,3 +103,43 @@ body {
 .read-the-docs {
   color: #888;
 }
+
+main {
+  flex: 1;
+}
+
+.footer {
+  background-color: #ffffff; /* Dark blue background */
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.footer-icon {
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+}
+
+/* Convert image to white */
+
+
+
+/* Hover Effect - Change to a Different Color */
+.footer-icon:hover {
+  transform: scale(1.2); /* Adjusts color slightly on hover */
+}
+
+/* Use flexbox to push the footer to the bottom */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full viewport height */
+}
+
+/* Allows content to expand while keeping the footer at the bottom */
+.content {
+  flex: 1; /* Pushes footer down */
+  padding: 20px; /* Adds space around the content */
+}
