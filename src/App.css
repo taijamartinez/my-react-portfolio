@@ -355,4 +355,23 @@ main {
   }
 }
 
+/* Ensure Navbar Brand Wraps or Shrinks on Small Screens */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem; /* Slightly smaller font size */
+    white-space: nowrap; /* Prevents breaking into multiple lines */
+    overflow: hidden; /* Ensures no overflow */
+    text-overflow: ellipsis; /* Adds "..." if too long */
+  }
+
+  .custom-navbar {
+    padding: 10px 15px; /* Reduce padding to give more space */
+  }
+
+  .navbar-nav {
+    gap: 5px; /* Reduce gap between nav links */
+  }
+}
+
+
 
