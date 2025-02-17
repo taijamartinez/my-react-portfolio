@@ -319,3 +319,40 @@ main {
 }
 
 
+/* Mobile-Friendly Adjustments (Applies to Screens Smaller than 992px) */
+@media (max-width: 992px) {
+  
+  /* Make the project grid responsive */
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* Adjusts grid layout */
+    gap: 15px;
+  }
+
+/* Mobile View (1 column) */
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr); /* Stack projects vertically */
+  }
+}
+  /* Adjust project cards to fit better on mobile */
+  .project-card {
+    max-width: 90%; /* Use more width on smaller screens */
+  }
+
+  /* Increase space between buttons */
+  .btn-group {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+  }
+
+  .btn-group .btn {
+    width: 100%; /* Make buttons full-width */
+  }
+
+  /* Reduce padding for portfolio section */
+  .portfolio-container {
+    padding: 30px 10px;
+  }
+}
+
+
