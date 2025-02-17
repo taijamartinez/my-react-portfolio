@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ export default function Contact() {
 
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
+  const form = useRef();
 
   // Handle Input Change
   const handleChange = (e) => {
@@ -72,14 +74,27 @@ export default function Contact() {
   // Handle Form Submission
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (!validateForm()) return;
 
-    setSuccessMessage("Your message has been sent successfully!");
-    setFormData({ name: "", email: "", message: "" });
+    emailjs
+      .sendForm('service_the1rh9', 'template_u0qibo9', form.current, {
+        publicKey: 'hjkYiaMkS5m9TiqJn',
+      })
+      .then(
+        () => {
+          setSuccessMessage("Your message has been sent successfully!");
+          setFormData({ name: "", email: "", message: "" });
 
-    // Clear success message after 5 seconds
-    setTimeout(() => setSuccessMessage(""), 5000);
+          // Clear success message after 5 seconds
+          setTimeout(() => setSuccessMessage(""), 5000);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+
+
+
   };
 
   return (
@@ -91,7 +106,7 @@ export default function Contact() {
           {/* Success Message */}
           {successMessage && <Alert variant="success">{successMessage}</Alert>}
 
-          <Form onSubmit={handleSubmit} className="p-4 shadow-sm bg-light rounded">
+          <Form onSubmit={handleSubmit} ref={form} className="p-4 shadow-sm bg-light rounded">
             {/* Name Field */}
             <Form.Group controlId="formName" className="mb-3">
               <Form.Label>Name</Form.Label>

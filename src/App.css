@@ -305,5 +305,17 @@ main {
   background-color: #cd8dda;
 }
 
+/* Styling for Skill Links */
+.skill-link {
+  color: #ffffff;  /* Keeps text white for contrast */
+  text-decoration: none;  /* Removes underline */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.skill-link:hover {
+  color: #cd8dda;  /* Matches your existing hover color */
+  text-decoration: underline;
+}
 
 
