@@ -2,14 +2,16 @@
 .custom-navbar {
   width: 100vw;  /* Ensure the navbar stretches across the screen */
   margin: 0;
-  padding: 15px 30px; /* Adjust padding for better spacing */
+  padding: 10px 30px; /* Adjust padding for better spacing */
   min-height: 70px;
   border-radius: 0;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: #212529;  /* Ensure background color covers the entire width */
+  background-color: #212529;
+  white-space: nowrap;
+  overflow: hidden;  /* Ensure background color covers the entire width */
 }
 
 /* Ensure Navbar Brand is Styled */
