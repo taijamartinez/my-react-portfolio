@@ -236,24 +236,15 @@ main {
   padding-bottom: 20px;
 }
 
-/* Portfolio Card Title */
 .section-card {
-  background-color: #f7f6f6; /* Light gray background */
-  border-radius: 5px 5px 0 0; /* Rounded edges */
-  padding: 5px 20px 5px;
-  text-align: center;
+  background: none; 
+  border: none; 
+  padding: 0;;
   max-width: 54%;
-  margin: 20px auto;
-  min-height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
-  border-bottom: 1px solid #b8b7b7; /* Thin gray line at the bottom */
-  border-left: none; /* Ensures no left border */
-  border-right: none; /* Ensures no right border */
-  border-top: none; /* Removes any top border */
+  margin: 0 auto;
+  height: auto;
 }
+
 
 /* Grid Layout */
 .project-grid {
@@ -297,5 +288,37 @@ main {
   font-size: 14px;
   min-height: 40px;
 }
+
+.contact-form-container {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.contact-form-container h1 {
+  margin-bottom: 20px;
+}
+
+.contact-form-container form {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+.contact-form-container .form-control {
+  border-radius: 5px;
+}
+
+.contact-form-container button {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.contact-heading {
+  font-size: 28px; 
+  font-weight: bold;
+  text-align: center;
+  color: #212529; 
+}
+
 
 
