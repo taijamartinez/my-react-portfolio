@@ -17,7 +17,7 @@ export default function Footer() {
             </a>
           </Col>
           <Col xs="auto">
-            <a href="https://www.linkedin.com/in/taija-martinez-3b128a351/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/taijamartinez" target="_blank" rel="noopener noreferrer">
               <img
                 src="https://img.icons8.com/?size=512&id=16166&format=png"
                 alt="LinkedIn"
