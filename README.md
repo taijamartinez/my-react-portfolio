@@ -15,7 +15,7 @@ A single-page portfolio application highlighting my projects, skills, and contac
 - [Questions](#questions)
 
 ## Installation
-1. Go to https://taija-martinez.netlify.app/resume in your browser.
+1. Go to https://taija-martinez.netlify.app/ in your browser.
 
 ## License
 This application is covered under the MIT license.
